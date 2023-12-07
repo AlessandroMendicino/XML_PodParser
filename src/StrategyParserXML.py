@@ -8,6 +8,7 @@ class ParsingStrategy():
     def parse(self, file_input, tag, filter_data):
         pass
 
+
 #parsing and filter xml using elementTress
 class TreeStrategy(ParsingStrategy):
     
