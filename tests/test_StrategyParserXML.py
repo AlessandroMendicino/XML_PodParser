@@ -10,7 +10,7 @@ class TestParsingStrategies(unittest.TestCase):
 
     def setUp(self):
         
-        self.xml_input_path = "./src/xml_files/generated_sample.xml"
+        self.xml_input_path = "./src/StrategyParserXML/xml_files/generated_sample.xml"
         self.datetime_tag = "MeseAnno"
         self.input_filter = "IT001E42718972222=13/2023"
         self.filtered_output_path = 'filtered.xml'
