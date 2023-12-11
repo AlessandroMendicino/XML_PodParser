@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 from jproperties import Properties
-from StrategyParserXML import SetParser
-from StrategyParserXML import TreeStrategy, DomStrategy
+from StrategyParserXML.StrategyParserXML import SetParser
+from StrategyParserXML.StrategyParserXML import TreeStrategy, DomStrategy
 #from parserXML import TreeParserFactory, DomParserFactory
 
  
