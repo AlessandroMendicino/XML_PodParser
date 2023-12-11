@@ -4,7 +4,7 @@ build-backend  = "setuptools.build_meta"
 
 [project]
 name = "XML_PODPARSER"
-version = "1.0.0"
+version = "1.0.1"
 description = "A simple xml parser that works on filtering xml files that contain pods measurements. "
 readme = "README.md"
 authors = [{ name = "Alessandro Mendicino"}]
@@ -23,4 +23,4 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/AlessandroMendicino/XML_PodParser.git "
+Homepage = "https://github.com/AlessandroMendicino/XML_PodParser.git "  
