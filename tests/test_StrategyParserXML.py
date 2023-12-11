@@ -1,7 +1,7 @@
 import unittest
 import sys
 sys.path.insert(0, r".\src")
-from StrategyParserXML.Strategy import TreeStrategy, DomStrategy, SetParser
+from src.StrategyParserXML.Strategy import TreeStrategy, DomStrategy, SetParser
 import unittest
 import os
 import xml.etree.ElementTree as ET
