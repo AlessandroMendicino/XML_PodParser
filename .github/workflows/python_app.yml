@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python -m unittest test/test_StrategyParserXML.py
+      - run: python -m unittest tests/test_StrategyParserXML.py
       
