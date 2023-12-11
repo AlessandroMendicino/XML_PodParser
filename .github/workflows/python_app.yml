@@ -1,0 +1,10 @@
+name: python_app
+run-name: ${{ github.actor }} an example of a workflow on event
+on: [push]
+jobs:
+  do_unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m unittest test/test_StrategyParserXML.py
+      
