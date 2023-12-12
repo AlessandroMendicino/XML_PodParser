@@ -28,4 +28,6 @@ jobs:
         - name: Deploy to Nexus
           run: | 
             python -m pip install twine
+            python -m pip install build
+            python -m build
             twine upload --repository-url http://localhost:8081/repository/xml_PARSER/ -u admin -p adminadmin --skip-existing dist/*
