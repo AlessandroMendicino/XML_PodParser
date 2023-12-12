@@ -6,6 +6,7 @@ import unittest
 import os
 import xml.etree.ElementTree as ET
 
+
 class TestParsingStrategies(unittest.TestCase):
 
     def setUp(self):
