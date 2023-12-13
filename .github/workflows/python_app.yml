@@ -1,5 +1,4 @@
 name: python_app
-run-name: ${{ github.actor }} an example of a workflow on event
 on: [push]
 jobs:
   do_unittest:
@@ -9,25 +8,25 @@ jobs:
       - run: python -m unittest tests/test_StrategyParserXML.py
       
   deploy:
-      needs: do_unittest
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout Repository
-          uses: actions/checkout@v4
-    
-        - name: Setup Python
-          uses: actions/setup-python@v2
-          with:
-            python-version: 3.11
-    
-        - name: Install Dependencies
-          run: |
-            python -m pip install --upgrade pip
-            pip install -r requirements.txt
-    
-        - name: Deploy to Nexus
-          run: | 
-            python -m pip install twine
-            python -m pip install build
-            python -m build
-            twine upload --repository-url http://localhost:8081/repository/xml_PARSER/ -u admin -p adminadmin dist/*
+    needs: do_unittest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Deploy to Nexus
+        run: | 
+          python -m pip install twine
+          python -m pip install build
+          python -m build
+          twine upload --repository-url http://localhost:8081/repository/xml_PARSER/ -u admin -p adminadmin dist/*
